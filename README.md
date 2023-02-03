@@ -13,7 +13,11 @@ Funcion: Ver destinos
 Metodo: POST
 URL: localhost:8080/api/terminal/crearDestino
 Funcion: Crear destino
+
+
 Sintaxis
+
+
 {
         "lugar": "Armenia",
         "tiempo": 70
@@ -30,7 +34,11 @@ Funcion: Ver buses
 Metodo: POST
 URL: localhost:8080/api/bus/crearBus
 Funcion: Crear bus
+
+
 Sintaxis
+
+
 {
         "marca": "Bolivariano",
         "destino": {
@@ -51,7 +59,11 @@ Funcion: Ver viajes
 Metodo: POST
 URL: localhost:8080/api/viajes/crearViaje
 Funcion: Crear viaje
+
+
 Sintaxis
+
+
 { 
         "id": "4",
         "marca": "Chino",
