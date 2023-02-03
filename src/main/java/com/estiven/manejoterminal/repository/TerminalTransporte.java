@@ -20,7 +20,7 @@ public class TerminalTransporte {
     private List<Pasajero> pasajeros;
     private List<Pasajero> pasajerosBus;
     private int indexId;
-    private List<Viaje> registroViajes;
+
 
     private int c=0;
 
