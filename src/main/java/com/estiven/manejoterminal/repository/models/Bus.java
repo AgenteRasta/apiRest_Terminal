@@ -9,13 +9,17 @@ public class Bus extends Transporte{
     private Destino destino;
     private List<Pasajero> pasajeros;
     private String hora;
+    private int capacidad;
+    private int sillasDis;
 
-    public Bus(String id, String marca, Destino destino,String hora, List<Pasajero> pasajeros) {
+    public Bus(String id, String marca, Destino destino,String hora,int capacidad, List<Pasajero> pasajeros) {
         this.id = id;
         this.marca = marca;
         this.destino = destino;
         this.hora = hora;
+        this.capacidad = capacidad;
         this.pasajeros = pasajeros;
+        sillasDis();
     }
 
     public String getHora() {
@@ -54,7 +58,21 @@ public class Bus extends Transporte{
         this.pasajeros = pasajeros;
     }
 
+    public int getCapacidad() {
+        return capacidad;
+    }
 
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public int getSillasDis() {
+        return sillasDis;
+    }
+
+    public void setSillasDis(int sillasDis) {
+        this.sillasDis = sillasDis;
+    }
 
     @Override
     public String toString() {
@@ -68,7 +86,11 @@ public class Bus extends Transporte{
     }
 
     @Override
-    public void recibirPersonas() {
-
+    public void sillasDis() {
+        if(pasajeros!=null) {
+            this.sillasDis = capacidad - pasajeros.size();
+        }else{
+            this.sillasDis=capacidad;
+        }
     }
 }

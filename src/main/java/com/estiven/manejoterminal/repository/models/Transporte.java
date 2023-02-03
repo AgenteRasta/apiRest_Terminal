@@ -4,5 +4,5 @@ public abstract class Transporte {
 
     public Transporte(){}
 
-    public abstract void recibirPersonas();
+    public abstract void sillasDis();
 }

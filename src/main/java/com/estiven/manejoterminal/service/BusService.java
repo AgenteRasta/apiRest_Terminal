@@ -12,7 +12,7 @@ public class BusService implements IBusService{
     @Autowired
     private TerminalTransporte terminal;
 
-    private int id=3;
+    private int id=5;
 
     @Override
     public List<Bus> obtenerBuses() {
@@ -25,6 +25,7 @@ public class BusService implements IBusService{
                 bus.getMarca(),
                 bus.getDestino(),
                 bus.getHora(),
+                bus.getCapacidad(),
                 bus.getPasajeros()
                 );
         terminal.agregarBus(newBus);

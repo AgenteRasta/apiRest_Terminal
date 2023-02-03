@@ -27,19 +27,25 @@ public class TerminalTransporte {
     public TerminalTransporte() {
         this.nombre = "Terminal";
         destinos=new ArrayList<>(List.of(new Destino("1","Bogota",60),
-                new Destino("2","Bogota",60),
+                new Destino("2","Cali",30),
                 new Destino("3","Medellin",80),
                 new Destino("4","Buga",90)));
         buses=new ArrayList<>(List.of(
-                new Bus("1","Mazda",new Destino("1","Bogota",60),"7:00AM",pasajerosBus),
-                new Bus("2","Honda",new Destino("2","Medellin",80),"9:00AM",pasajerosBus)
-                ));
+                new Bus("1","Mazda",new Destino("1","Bogota",60),"7:00AM",20,pasajerosBus),
+                new Bus("2","Honda",new Destino("2","Cali",30),"9:00AM",15,pasajerosBus),
+                new Bus("3","Yamaha",new Destino("3","Medellin",80),"10:00AM",10,pasajerosBus),
+                new Bus("4","Chino",new Destino("4","Buga",90),"11:00AM",4,pasajerosBus)
+        ));
         pasajeros=new ArrayList<Pasajero>(List.of(
                 new Pasajero("1","Carlos",123,313),
                 new Pasajero("2","Fabio",456,313),
                 new Pasajero("3","Mario",789,313),
                 new Pasajero("4","Vanessa",147,313),
-                new Pasajero("5","Isabella",369,313)
+                new Pasajero("5","Isabella",369,313),
+                new Pasajero("6","Estiven",852,313),
+                new Pasajero("7","Juan",951,313),
+                new Pasajero("8","David",753,313),
+                new Pasajero("9","Luisa",145,313)
         ));
     }
 //__________________________________________DESTINO_______________________________________
