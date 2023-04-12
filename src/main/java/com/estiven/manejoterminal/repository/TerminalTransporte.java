@@ -48,6 +48,7 @@ public class TerminalTransporte {
                 new Pasajero("9","Luisa",145,313)
         ));
     }
+
 //__________________________________________DESTINO_______________________________________
     public void agregarDestino(Destino destino){
         destinos.add(destino);
